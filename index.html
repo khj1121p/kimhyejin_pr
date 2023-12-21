@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/script.js"></script>
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="sec1 home page">
+            <div class="container">
+                <div class="header-area">
+                    <div class="name">KIM HYE JIN</div>
+                    <div class="menu-box">
+                        <a href="#sec0" class="menu menu1 active">Home</a>
+                        <a href="#sec1" class="menu menu2">About Me</a>
+                        <a href="#sec2" class="menu menu3">Portfolio</a>
+                        <a href="#sec3" class="menu menu4">Contact</a>
+                    </div>
+                    <div id="hamburger">
+                        <span></span><span></span>
+                    </div>
+                </div>
+                <div class="title">
+                    <span></span>
+                    <h1>Web Publisher</h1>
+                    <h1>Portfolio</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="sec2 about_me page">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="profile">
+                    <div class="profile-img"></div>
+                    <div class="introduction">
+                        <div class="intro">
+                            <p>이름</p>
+                            <h5>김혜진</h5>
+                        </div>
+                        <div class="intro">
+                            <p>생년월일</p>
+                            <h5>1996.11.21.</h5>
+                        </div>
+                        <div class="intro">
+                            <p>수료 내역</p>
+                            <h5>2023. 02 ~ 2023. 12.<br>
+                                SBS아카데미컴퓨터아트학원일산점 웹디자이너 과정</h5>
+                        </div>
+                        <div class="intro">
+                            <p>자격증</p>
+                            <div>
+                                <h5>2023. 09. 컴퓨터활용능력 1급</h5>
+                                <h5>2023. 06. 정보처리기사</h5>
+                            </div>
+                        </div>
+                        <div class="intro">
+                            <p>스킬</p>
+                            <div>
+                                <h5>HTML / CSS</h5>
+                                <h5>Javascript / J-Query</h5>
+                                <h5>Figma</h5>
+                                <h5>Photoshop</h5>
+                                <h5>Illustrator</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="sec3 portfolio page">
+            <div class="container">
+                <h2>Portfolio</h2>
+                <ul class="portfolio-box">
+                    <li data-alt="tab1" class="portf active">d’Alba</li>
+                    <li data-alt="tab2" class="portf">HANSSEM</li>
+                    <li data-alt="tab3" class="portf">Paul Bassett</li>
+                    <li data-alt="tab4" class="portf">Coex</li>
+                    <li data-alt="tab5" class="portf">Re-Sellch</li>
+                </ul>
+                <div>
+                    <div class="pofol active" id="tab1">
+                        <div class="left">
+                            <img src="./img/dalba.png" alt="">
+                        </div>
+                        <div class="right">
+                            <div class="information">
+                                <div class="info">
+                                    <p>사이트명</p>
+                                    <h5>d’Alba</h5>
+                                </div>
+                                <div class="info">
+                                    <p>제작기간</p>
+                                    <h5>2023.09. (2주)</h5>
+                                </div>
+                                <div class="info">
+                                    <p>제작물</p>
+                                    <h5>반응형 메인페이지</h5>
+                                </div>
+                                <div class="info">
+                                    <p>메인컬러</p>
+                                    <h5>Yellow, Gray, Black</h5>
+                                </div>
+                                <div class="info">
+                                    <p>기여도</p>
+                                    <h5>100%</h5>
+                                </div>
+                            </div>
+                            <a href="https://khj1121p.github.io/dalba/" class="btn">사이트바로가기</a>
+                        </div>
+                    </div>
+                    <div class="pofol" id="tab2">
+                        <div class="left">
+                            <img src="./img/hanssem.png" alt="">
+                        </div>
+                        <div class="right">
+                            <div class="information">
+                                <div class="info">
+                                    <p>사이트명</p>
+                                    <h5>HANSSEM</h5>
+                                </div>
+                                <div class="info">
+                                    <p>제작기간</p>
+                                    <h5>2023.10. (3주)</h5>
+                                </div>
+                                <div class="info">
+                                    <p>제작물</p>
+                                    <h5>반응형 메인페이지</h5>
+                                </div>
+                                <div class="info">
+                                    <p>메인컬러</p>
+                                    <h5>White, Black</h5>
+                                </div>
+                                <div class="info">
+                                    <p>기여도</p>
+                                    <h5>100%</h5>
+                                </div>
+                            </div>
+                            <a href="https://khj1121p.github.io/HANSSEM/" class="btn">사이트바로가기</a>
+                        </div>
+                        
+                    </div>
+                    <div class="pofol" id="tab3">
+                        <div class="left">
+                            <img src="./img/paulbassett.png" alt="">
+                        </div>
+                        <div class="right">
+                            <div class="information">
+                                <div class="info">
+                                    <p>사이트명</p>
+                                    <h5>Paul Bassett</h5>
+                                </div>
+                                <div class="info">
+                                    <p>제작기간</p>
+                                    <h5>2023.11. (2주)</h5>
+                                </div>
+                                <div class="info">
+                                    <p>제작물</p>
+                                    <h5>반응형 메인페이지</h5>
+                                </div>
+                                <div class="info">
+                                    <p>메인컬러</p>
+                                    <h5>Gray, Black</h5>
+                                </div>
+                                <div class="info">
+                                    <p>기여도</p>
+                                    <h5>100%</h5>
+                                </div>
+                            </div>
+                            <a href="https://khj1121p.github.io/paulbassett/" class="btn">사이트바로가기</a>
+                        </div>
+                        
+                    </div>
+                    <div class="pofol" id="tab4">
+                        <div class="left">
+                            <img src="./img/coex.png" alt="">
+                        </div>
+                        <div class="right">
+                            <div class="information">
+                                <div class="info">
+                                    <p>사이트명</p>
+                                    <h5>Coex</h5>
+                                </div>
+                                <div class="info">
+                                    <p>제작기간</p>
+                                    <h5>2023.11. (2주)</h5>
+                                </div>
+                                <div class="info">
+                                    <p>제작물</p>
+                                    <h5>반응형 메인페이지</h5>
+                                </div>
+                                <div class="info">
+                                    <p>메인컬러</p>
+                                    <h5>Gray, Black</h5>
+                                </div>
+                                <div class="info">
+                                    <p>기여도</p>
+                                    <h5>100%</h5>
+                                </div>
+                            </div>
+                            <a href="https://khj1121p.github.io/coex/" class="btn">사이트바로가기</a>
+                        </div>
+                        
+                    </div>
+                    <div class="pofol" id="tab5">
+                        <div class="left">
+                            <img src="./img/re-sellch.png" alt="">
+                        </div>
+                        <div class="right">
+                            <div class="information">
+                                <div class="info">
+                                    <p>프로젝트명</p>
+                                    <h5>Re-Sellch</h5>
+                                </div>
+                                <div class="info">
+                                    <p>제작기간</p>
+                                    <h5>2023.09.~2023.10. (2주)</h5>
+                                </div>
+                                <div class="info">
+                                    <p>제작물</p>
+                                    <h5>UIUX</h5>
+                                </div>
+                                <div class="info">
+                                    <p>메인컬러</p>
+                                    <h5>Blue, Black</h5>
+                                </div>
+                                <div class="info">
+                                    <p>기여도</p>
+                                    <h5>25%</h5>
+                                </div>
+                            </div>
+                            <a href="./img/re-sellch.pdf" class="btn uiux">프로젝트 바로가기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sec4 contact page">
+            <div class="container">
+                <div class="title">
+                    <span></span>
+                    <h2>Contact Me</h2>
+                </div>
+                <div class="cont-box">
+                    <div class="cont">
+                        <p>E-Mail</p>
+                        <h5>khj1121p@naver.com</h5>
+                    </div>
+                    <div class="cont">
+                        <p>Phone</p>
+                        <h5>010-6274-5135</h5>
+                    </div>
+                </div>
+                <h4>Thanks for Watching :)</h4>
+                <h6>사용자의 니즈를 충족할 수 있는 디자인을 위해 열린 마음으로 소통하는 김혜진이 되겠습니다.</h6>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
