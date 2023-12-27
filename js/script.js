@@ -86,7 +86,7 @@ $(document).ready(function(){
     });
     $('.menu4').click(function(){
         $('html,body').animate({
-            scrollTop : sec4
+            scrollTop : sec4+600
         });
     });
 
