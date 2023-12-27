@@ -101,7 +101,7 @@ h2::after{
 .about_me .profile-img{
     width: 482px;
     height: 482px;
-    background-color: lavender;
+    /* background-color: lavender; */
 }
 .about_me .introduction{
     text-align: start;
@@ -178,12 +178,16 @@ h2::after{
     display: flex;
     margin-bottom: 20px;
 }
+.portfolio .mv-site{
+    display: flex;
+}
 .portfolio .btn{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 212px;
-    height: 69px;
+    width: 200px;
+    height: 60px;
+    margin-right: 12px;
     border: 1px solid #474332;
     border-radius: 20px;
     font-size: 20px;
@@ -195,6 +199,12 @@ h2::after{
 }
 .portfolio .info{
     /* margin-bottom: 24px; */
+}
+.portfolio .explain{
+    text-align: left;
+    width: 440px;
+    margin-bottom: 12px;
+    font-size: 16px;
 }
 .portfolio .information p{
     font-size: 20px;
