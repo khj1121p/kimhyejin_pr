@@ -1,5 +1,5 @@
 @charset "utf-8";
-#hamburger{
+#hamburger, .side-bar{
     display: none;
 }
 .home .container{
@@ -197,9 +197,6 @@ h2::after{
 .portfolio .btn:hover{
     background-color: #F4DCF2;
 }
-.portfolio .info{
-    /* margin-bottom: 24px; */
-}
 .portfolio .explain{
     text-align: left;
     width: 440px;
@@ -305,11 +302,25 @@ h2::after{
     }
 }
 @media (max-width: 1240px){
+    .about_me .container,
+    .portfolio .container{
+        width: 1000px;
+    }
+    .about_me .introduction .intro p{
+        width: 90px;
+    }
     .header-area{
-        padding: 0 160px;
+        padding: 0 100px;
+    }
+    .portfolio .left{
+        margin-right: 60px;
+    }
+    .portfolio .portfolio-box .portf{
+        margin-right: 40px;
+        margin-left: 40px;
     }
 }
-@media (max-width: 1000px){
+@media (max-width: 1060px){
     .header-area .menu-box{
         display: none;
     }
@@ -324,7 +335,7 @@ h2::after{
     #hamburger span{
         background-color: #474332;
         position: absolute;
-        transition: 0.3s;
+        transition: 0.5s;
     }
     #hamburger span:nth-child(1){
         top: 50%;
@@ -345,5 +356,100 @@ h2::after{
     }
     #hamburger span:nth-child(2).active{
         transform: translateX(0);
+    }
+    .side-bar{
+        position: fixed;
+        top: 100px;
+        right: -100%;
+        display: flex;
+        align-items: cneter;
+        flex-direction: column;
+        transition: 0.5s;
+    }
+    .side-bar.active{
+        right: 10px;
+    }
+    .side-bar .menu{
+        margin: 12px;
+    }
+    .header-area .side-bar a{
+        margin-right: 48px;
+        position: relative;
+    }
+    .header-area .side-bar a.active::before{
+        content: '';
+        background-color: #F4DCF2;
+        position: absolute;
+        width: 120%;
+        height: 100%;
+        opacity: 0.5;
+        z-index: -1;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+    }
+    .about_me .container{
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 0;
+    }
+    h2{
+        margin-bottom: 40px;
+    }
+    .about_me .profile{
+        display: block;
+    }
+    .about_me .profile-img{
+        margin: 0 auto;
+    }
+    .about_me .introduction{
+        width: 480px;
+        margin: 0 auto;
+        margin-top: 24px;
+    }
+    .about_me .introduction .intro{
+        margin-bottom: 8px;
+    }
+
+    .portfolio .container{
+        width: 100%;
+        padding: 60px 60px 48px;
+        /* padding-top: 60px;
+        padding-bottom: 48px; */
+    }
+    .portfolio .portfolio-box{
+        display: none;
+    }
+    .portfolio .pofol.active{
+        display: block;
+    }
+    .portfolio .explain{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .portfolio .left{
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    .portfolio .right{
+        display: inline-block;
+        width: 600px;
+        margin: 0 auto;
+    }
+    .portfolio .pofol .information .info{
+        margin-bottom: 8px;
+    }
+    .portfolio .btn,
+    .portfolio .pofol .uiux{
+        width: 100%;
+        border-radius: 4px;
+        height: 40px;
+    }
+    .portfolio .pofol .uiux{
+        width: 50%;
+    }
+    .portfolio .pofol{
+        display: block;
     }
 }
